@@ -10,7 +10,7 @@ export default async function Home(props: {
 }) {
   const searchParams = await props.searchParams;
   const currentPage = Number(searchParams?.page) || 1;
-  const itemsPerPage = 8;
+  const itemsPerPage = 4;
   const totalPages = Math.ceil(movies.length / itemsPerPage);
 
   // const startIndex = (currentPage - 1) * itemsPerPage;
